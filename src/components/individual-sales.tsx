@@ -1,4 +1,4 @@
-import { ImageIcon, ArrowRight, Info } from "lucide-react"
+import { ImageIcon, Info, Clock } from "lucide-react"
 
 export default function IndividualSales() {
   return (
@@ -47,15 +47,13 @@ export default function IndividualSales() {
                   ARS — Pesos Argentinos
                 </p>
               </div>
-              <a
-                href="https://wa.me/5491100000000?text=Hola!%20Quiero%20ver%20la%20galería%20del%20evento"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-4 text-sm tracking-widest uppercase font-sans font-medium transition-colors group w-full md:w-auto justify-center"
-              >
-                Ir a la Galería General
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </a>
+              <div className="flex flex-col items-center gap-1 border border-primary/40 bg-primary/5 px-6 py-4 w-full md:w-auto">
+                <div className="flex items-center gap-2 text-primary">
+                  <Clock className="w-4 h-4" />
+                  <span className="text-xs tracking-widest uppercase font-sans font-semibold">Próximamente</span>
+                </div>
+                <span className="font-display font-bold text-foreground text-lg tracking-tight">19 / 04 / 2026</span>
+              </div>
             </div>
           </div>
         </div>

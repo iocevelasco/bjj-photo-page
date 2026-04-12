@@ -23,8 +23,8 @@ const packs = [
     subtitle: "Seguimiento personalizado",
     description:
       "Desde la entrada al tatami hasta el podio. Tu historia completa en un solo pack.",
-    price: "Referencia",
-    priceSub: "Valor de inscripción",
+    price: "$25.000",
+    priceSub: "ARS — Pesos Argentinos",
     cta: "Reservar Cupo",
     items: [
       { icon: Image, text: "10 a 15 fotos editadas en alta resolución" },
@@ -62,8 +62,8 @@ const packs = [
     subtitle: "Para atletas con marca personal",
     description:
       "Contenido de alta prioridad y entrega express. Ideal para atletas que gestionan su imagen digital.",
-    price: "Individual",
-    priceSub: "+ 30% Express",
+    price: "$32.500",
+    priceSub: "ARS — Pack Express (+30%)",
     cta: "Reservar Cupo",
     items: [
       { icon: Zap, text: "5 fotos 'Express' el mismo día vía WhatsApp" },
