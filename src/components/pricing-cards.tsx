@@ -6,7 +6,6 @@ import {
   Camera,
   Trophy,
   Image,
-  Video,
   Zap,
   Medal,
   Shield,
@@ -15,29 +14,10 @@ import {
 
 const packs = [
   {
-    id: "individual",
-    icon: User,
-    tag: null,
-    featured: false,
-    title: "Individual Athlete",
-    subtitle: "Seguimiento personalizado",
-    description:
-      "Desde la entrada al tatami hasta el podio. Tu historia completa en un solo pack.",
-    price: "$25.000",
-    priceSub: "ARS — Pesos Argentinos",
-    cta: "Reservar Cupo",
-    items: [
-      { icon: Image, text: "10 a 15 fotos editadas en alta resolución" },
-      { icon: Camera, text: "Retratos de preparación antes de competir" },
-      { icon: Shield, text: "Acción técnica: sumisiones y pasajes de guardia" },
-      { icon: Trophy, text: "Foto de reacción final en el podio" },
-    ],
-  },
-  {
     id: "academy",
     icon: Users,
-    tag: "Más Popular",
-    featured: true,
+    tag: null,
+    featured: false,
     title: "Academy / Team",
     subtitle: "Ideal para profesores y gimnasios",
     description:
@@ -50,7 +30,25 @@ const packs = [
       { icon: Users, text: "Fotos grupales con bandera de la academia" },
       { icon: BookOpen, text: "Momentos de coaching y dirección técnica" },
       { icon: Camera, text: "Acción de todos los alumnos en competencia" },
-      { icon: Video, text: "Bonus: 3 videos cortos (reels) para redes sociales" },
+    ],
+  },
+  {
+    id: "individual",
+    icon: User,
+    tag: "Más Popular",
+    featured: true,
+    title: "Individual Athlete",
+    subtitle: "Seguimiento personalizado",
+    description:
+      "Desde la entrada al tatami hasta el podio. Tu historia completa en un solo pack.",
+    price: "$25.000",
+    priceSub: "ARS — Pesos Argentinos",
+    cta: "Reservar Cupo",
+    items: [
+      { icon: Image, text: "10 a 15 fotos editadas en alta resolución" },
+      { icon: Camera, text: "Retratos de preparación antes de competir" },
+      { icon: Shield, text: "Acción técnica: sumisiones y pasajes de guardia" },
+      { icon: Trophy, text: "Foto de reacción final en el podio" },
     ],
   },
   {
