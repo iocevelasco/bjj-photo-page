@@ -1,35 +1,29 @@
-import { Camera, Instagram, MessageCircle, Youtube, MapPin, Phone, Mail } from "lucide-react"
+import { Camera, Instagram, MessageCircle, MapPin, Phone, Mail } from "lucide-react"
 
 const socialLinks = [
   {
     icon: Instagram,
     label: "Instagram",
-    handle: "@bjjfoto",
-    href: "https://instagram.com/bjjfoto",
+    handle: "@ioce.ph",
+    href: "https://www.instagram.com/ioce.ph/",
   },
   {
     icon: MessageCircle,
     label: "WhatsApp",
-    handle: "+54 9 11 0000-0000",
-    href: "https://wa.me/5491100000000",
-  },
-  {
-    icon: Youtube,
-    label: "YouTube",
-    handle: "BJJ Foto",
-    href: "https://youtube.com/@bjjfoto",
+    handle: "+54 9 11 2192-5253",
+    href: "https://wa.me/5491121925253",
   },
 ]
 
 const contactDetails = [
   { icon: MapPin, text: "Buenos Aires, Argentina" },
-  { icon: Phone, text: "+54 9 11 0000-0000" },
-  { icon: Mail, text: "hola@bjjfoto.com.ar" },
+  { icon: Phone, text: "+54 9 11 2192-5253" },
+  { icon: Mail, text: "iocevelasco@gmail.com" },
 ]
 
 export default function ContactFooter() {
   return (
-    <footer id="contacto" className="bg-card border-t border-border">
+    <footer id="contact" className="bg-card border-t border-border">
       {/* Contact section */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-20">
         <div className="text-center mb-14">

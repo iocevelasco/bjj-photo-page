@@ -76,7 +76,7 @@ const packs = [
 
 export default function PricingCards() {
   return (
-    <section id="packs" className="py-24 px-4 sm:px-6 bg-background">
+    <section id="pricing" className="py-24 px-4 sm:px-6 bg-background">
       <div className="max-w-6xl mx-auto">
         {/* Section header */}
         <div className="text-center mb-16">

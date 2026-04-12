@@ -4,10 +4,10 @@ import { useState } from "react"
 import { Camera, Menu, X } from "lucide-react"
 
 const navLinks = [
-  { label: "Packs", href: "#packs" },
+  { label: "Packs", href: "#pricing" },
   { label: "Galería", href: "#galeria" },
-  { label: "Fotos Individuales", href: "#individual" },
-  { label: "Contacto", href: "#contacto" },
+  { label: "Fotos Individuales", href: "#individual-sales" },
+  { label: "Contacto", href: "#contact" },
 ]
 
 export default function Header() {

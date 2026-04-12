@@ -2,7 +2,7 @@ import { ImageIcon, ArrowRight, Info } from "lucide-react"
 
 export default function IndividualSales() {
   return (
-    <section id="individual" className="py-20 px-4 sm:px-6 bg-background">
+    <section id="individual-sales" className="py-20 px-4 sm:px-6 bg-background">
       <div className="max-w-6xl mx-auto">
         <div className="border border-primary/30 bg-card relative overflow-hidden">
           {/* Decorative red accent bar */}

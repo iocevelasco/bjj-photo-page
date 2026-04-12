@@ -7,7 +7,7 @@ const stats = [
 
 export default function StatsBanner() {
   return (
-    <section className="bg-secondary border-y border-border py-12 px-4 sm:px-6">
+    <section id="stats" className="hidden">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map(({ value, label }) => (

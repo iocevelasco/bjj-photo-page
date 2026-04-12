@@ -2,7 +2,7 @@ import { ChevronDown } from "lucide-react"
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background image */}
       <div className="absolute inset-0">
         <img
@@ -34,13 +34,13 @@ export default function Hero() {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="#packs"
+            href="#pricing"
             className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-sm tracking-widest uppercase font-sans font-medium transition-colors"
           >
             Ver Packs y Precios
           </a>
           <a
-            href="#individual"
+            href="#individual-sales"
             className="border border-border hover:border-primary text-foreground hover:text-primary px-8 py-4 text-sm tracking-widest uppercase font-sans font-medium transition-colors"
           >
             Buscar mis Fotos
@@ -50,7 +50,7 @@ export default function Hero() {
 
       {/* Scroll indicator */}
       <a
-        href="#packs"
+        href="#pricing"
         className="absolute bottom-8 left-1/2 -translate-x-1/2 text-muted-foreground hover:text-primary transition-colors animate-bounce"
         aria-label="Desplazarse hacia abajo"
       >
