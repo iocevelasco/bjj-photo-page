@@ -23,7 +23,7 @@ export default function Header() {
           </div>
           <div className="leading-none">
             <span className="block text-foreground font-sans font-700 text-lg tracking-widest uppercase">
-              BJJ<span className="text-primary">FOTO</span>
+              IOCE BJJ<span className="text-primary"> FOTOGRAFÍA</span>
             </span>
             <span className="block text-muted-foreground text-[10px] tracking-[0.2em] uppercase font-display">
               Fotografía de Competencia

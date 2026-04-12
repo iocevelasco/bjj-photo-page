@@ -104,11 +104,11 @@ export default function ContactFooter() {
               <Camera className="w-4 h-4 text-primary-foreground" />
             </div>
             <span className="font-sans font-medium text-foreground text-sm tracking-widest uppercase">
-              BJJ<span className="text-primary">FOTO</span>
+              IOCE BJJ<span className="text-primary"> FOTOGRAFÍA</span>
             </span>
           </div>
           <p className="text-muted-foreground text-xs font-display tracking-wider text-center">
-            &copy; {new Date().getFullYear()} BJJFoto. Todos los derechos reservados. Buenos Aires, Argentina.
+            &copy; {new Date().getFullYear()} IOCE BJJ Fotografía. Todos los derechos reservados. Buenos Aires, Argentina.
           </p>
           <p className="text-muted-foreground text-xs font-display tracking-wider">
             Fotografía de Competencia
