@@ -3,6 +3,8 @@
 import { useState } from "react"
 import { Camera, Menu, X } from "lucide-react"
 
+const WA_HREF = "https://wa.me/5491121925253?text=Hola!%20Quiero%20reservar%20un%20cupo"
+
 const navLinks = [
   { label: "Packs", href: "#pricing" },
   { label: "Galería", href: "#galeria" },
@@ -14,10 +16,21 @@ export default function Header() {
   const [open, setOpen] = useState(false)
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
+    <header className="fixed top-0 left-0 right-0 z-50 border-b border-border overflow-hidden">
+      {/* Background image with B&W filter + gradient */}
+      <div className="absolute inset-0 -z-10">
+        <img
+          src="/images/_MG_6022-2.jpg"
+          alt=""
+          aria-hidden="true"
+          className="w-full h-full object-cover object-center grayscale"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/85 to-background/60" />
+      </div>
+
       <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-2 group" aria-label="BJJ Foto — Inicio">
+        <a href="#" className="flex items-center gap-2 group" aria-label="IOCE BJJ Fotografía — Inicio">
           <div className="flex items-center justify-center w-9 h-9 bg-primary rounded-sm">
             <Camera className="w-5 h-5 text-primary-foreground" />
           </div>
@@ -43,7 +56,9 @@ export default function Header() {
             </a>
           ))}
           <a
-            href="#packs"
+            href={WA_HREF}
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-primary hover:bg-primary/90 text-primary-foreground px-4 py-2 text-sm tracking-widest uppercase font-sans transition-colors"
           >
             Reservar Cupo
@@ -64,7 +79,7 @@ export default function Header() {
       {/* Mobile Nav */}
       {open && (
         <nav
-          className="md:hidden bg-card border-t border-border px-4 py-6 flex flex-col gap-4"
+          className="md:hidden bg-card/95 border-t border-border px-4 py-6 flex flex-col gap-4"
           aria-label="Navegación móvil"
         >
           {navLinks.map((link) => (
@@ -78,7 +93,9 @@ export default function Header() {
             </a>
           ))}
           <a
-            href="#packs"
+            href={WA_HREF}
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={() => setOpen(false)}
             className="bg-primary hover:bg-primary/90 text-primary-foreground px-4 py-3 text-sm tracking-widest uppercase font-sans transition-colors text-center mt-2"
           >
