@@ -1,4 +1,5 @@
 import { Camera, Instagram, MessageCircle, MapPin, Phone, Mail } from "lucide-react"
+import { WA_HREF } from "@/lib/whatsapp"
 
 const socialLinks = [
   {
@@ -11,7 +12,7 @@ const socialLinks = [
     icon: MessageCircle,
     label: "WhatsApp",
     handle: "+54 9 11 2192-5253",
-    href: "https://wa.me/5491121925253",
+    href: WA_HREF,
   },
 ]
 
@@ -56,7 +57,7 @@ export default function ContactFooter() {
             ))}
 
             <a
-              href="https://wa.me/5491100000000?text=Hola!%20Quiero%20consultar%20sobre%20fotografía%20de%20BJJ"
+              href={WA_HREF}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-4 text-sm tracking-widest uppercase font-sans font-medium transition-colors mt-4"

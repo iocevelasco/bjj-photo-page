@@ -2,8 +2,7 @@
 
 import { useState } from "react"
 import { Camera, Menu, X } from "lucide-react"
-
-const WA_HREF = "https://wa.me/5491121925253?text=Hola!%20Quiero%20reservar%20un%20cupo"
+import { WA_HREF } from "@/lib/whatsapp"
 
 const navLinks = [
   { label: "Packs", href: "#pricing" },

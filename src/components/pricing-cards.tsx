@@ -11,6 +11,7 @@ import {
   Shield,
   BookOpen,
 } from "lucide-react"
+import { WA_HREF } from "@/lib/whatsapp"
 
 const packs = [
   {
@@ -169,7 +170,7 @@ export default function PricingCards() {
 
                   {/* CTA */}
                   <a
-                    href="https://wa.me/5491100000000?text=Hola!%20Quiero%20reservar%20un%20cupo%20para%20el%20pack"
+                    href={WA_HREF}
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`block text-center py-4 text-sm tracking-widest uppercase font-sans font-medium transition-colors ${
