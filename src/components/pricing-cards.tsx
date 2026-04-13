@@ -25,6 +25,7 @@ const packs = [
       "Cobertura completa de todo tu equipo. Galería profesional para potenciar la imagen de tu academia.",
     price: "Consultar",
     priceSub: "Tarifa por academia",
+    deposit: null,
     cta: "Reservar Cupo",
     items: [
       { icon: Image, text: "Galería completa +50 fotos con edición de color" },
@@ -44,9 +45,10 @@ const packs = [
       "Desde la entrada al tatami hasta el podio. Tu historia completa en un solo pack.",
     price: "$25.000",
     priceSub: "ARS — Pesos Argentinos",
+    deposit: "$7.500",
     cta: "Reservar Cupo",
     items: [
-      { icon: Image, text: "10 a 15 fotos editadas en alta resolución" },
+      { icon: Image, text: "8 a 12 fotos editadas en alta resolución" },
       { icon: Camera, text: "Retratos de preparación antes de competir" },
       { icon: Shield, text: "Acción técnica: sumisiones y pasajes de guardia" },
       { icon: Trophy, text: "Foto de reacción final en el podio" },
@@ -63,6 +65,7 @@ const packs = [
       "Contenido de alta prioridad y entrega express. Ideal para atletas que gestionan su imagen digital.",
     price: "$32.500",
     priceSub: "ARS — Pack Express (+30%)",
+    deposit: "$9.750",
     cta: "Reservar Cupo",
     items: [
       { icon: Zap, text: "5 fotos 'Express' el mismo día vía WhatsApp" },
@@ -138,19 +141,29 @@ export default function PricingCards() {
                   </p>
 
                   {/* Price */}
-                  <div className="mb-8 border-t border-b border-border py-5">
-                    <div className="flex items-baseline gap-2">
-                      <span
-                        className={`font-display font-extrabold text-3xl uppercase tracking-tight ${
-                          pack.featured ? "text-primary" : "text-foreground"
-                        }`}
-                      >
-                        {pack.price}
-                      </span>
+                  <div className="mb-8 border-t border-b border-border py-5 space-y-3">
+                    <div>
+                      <div className="flex items-baseline gap-2">
+                        <span
+                          className={`font-display font-extrabold text-3xl uppercase tracking-tight ${
+                            pack.featured ? "text-primary" : "text-foreground"
+                          }`}
+                        >
+                          {pack.price}
+                        </span>
+                      </div>
+                      <p className="text-muted-foreground text-xs tracking-wider uppercase font-display mt-1">
+                        {pack.priceSub}
+                      </p>
                     </div>
-                    <p className="text-muted-foreground text-xs tracking-wider uppercase font-display mt-1">
-                      {pack.priceSub}
-                    </p>
+                    <div className="bg-primary/10 border border-primary/20 px-3 py-2">
+                      <p className="text-primary text-xs tracking-wider uppercase font-display font-semibold">
+                        Reserva (30%)
+                      </p>
+                      <p className="text-foreground font-display font-bold text-lg mt-0.5">
+                        {pack.deposit ?? "A consultar"}
+                      </p>
+                    </div>
                   </div>
 
                   {/* Feature list */}
