@@ -1,13 +1,12 @@
 "use client"
 
 import { useState } from "react"
-import { Camera, Menu, X } from "lucide-react"
-import { WA_HREF } from "@/lib/whatsapp"
+import { Camera, Menu, X, ExternalLink } from "lucide-react"
+import { GALLERY_HREF } from "@/components/individual-sales"
 
 const navLinks = [
   { label: "Packs", href: "#pricing" },
-  { label: "Galería", href: "#galeria" },
-  { label: "Fotos Individuales", href: "#individual-sales" },
+  { label: "Cómo Comprar", href: "#individual-sales" },
   { label: "Contacto", href: "#contact" },
 ]
 
@@ -55,12 +54,13 @@ export default function Header() {
             </a>
           ))}
           <a
-            href={WA_HREF}
+            href={GALLERY_HREF}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-primary hover:bg-primary/90 text-primary-foreground px-4 py-2 text-sm tracking-widest uppercase font-sans transition-colors"
+            className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground px-4 py-2 text-sm tracking-widest uppercase font-sans transition-colors"
           >
-            Reservar Cupo
+            <ExternalLink className="w-3.5 h-3.5" />
+            Ver Fotos
           </a>
         </nav>
 
@@ -92,13 +92,14 @@ export default function Header() {
             </a>
           ))}
           <a
-            href={WA_HREF}
+            href={GALLERY_HREF}
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setOpen(false)}
-            className="bg-primary hover:bg-primary/90 text-primary-foreground px-4 py-3 text-sm tracking-widest uppercase font-sans transition-colors text-center mt-2"
+            className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground px-4 py-3 text-sm tracking-widest uppercase font-sans transition-colors text-center mt-2"
           >
-            Reservar Cupo
+            <ExternalLink className="w-3.5 h-3.5" />
+            Ver Fotos
           </a>
         </nav>
       )}

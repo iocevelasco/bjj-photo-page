@@ -1,4 +1,5 @@
 import { ChevronDown } from "lucide-react"
+import { GALLERY_HREF } from "@/components/individual-sales"
 
 export default function Hero() {
   return (
@@ -40,7 +41,9 @@ export default function Hero() {
             Ver Packs y Precios
           </a>
           <a
-            href="#individual-sales"
+            href={GALLERY_HREF}
+            target="_blank"
+            rel="noopener noreferrer"
             className="border border-border hover:border-primary text-foreground hover:text-primary px-8 py-4 text-sm tracking-widest uppercase font-sans font-medium transition-colors"
           >
             Buscar mis Fotos

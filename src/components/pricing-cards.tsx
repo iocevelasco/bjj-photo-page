@@ -26,7 +26,7 @@ const packs = [
     price: "Consultar",
     priceSub: "Tarifa por academia",
     deposit: null,
-    cta: "Reservar Cupo",
+    cta: "Consultar Pack",
     items: [
       { icon: Image, text: "Galería completa +50 fotos con edición de color" },
       { icon: Users, text: "Fotos grupales con bandera de la academia" },
@@ -46,7 +46,7 @@ const packs = [
     price: "$25.000",
     priceSub: "ARS — Pesos Argentinos",
     deposit: "$7.500",
-    cta: "Reservar Cupo",
+    cta: "Comprar Pack",
     items: [
       { icon: Image, text: "8 a 12 fotos editadas en alta resolución" },
       { icon: Camera, text: "Retratos de preparación antes de competir" },
@@ -66,7 +66,7 @@ const packs = [
     price: "$32.500",
     priceSub: "ARS — Pack Express (+30%)",
     deposit: "$9.750",
-    cta: "Reservar Cupo",
+    cta: "Comprar Pack",
     items: [
       { icon: Zap, text: "5 fotos 'Express' el mismo día vía WhatsApp" },
       { icon: Image, text: "Resto de las fotos entregadas en 48 horas" },

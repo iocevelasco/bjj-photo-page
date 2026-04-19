@@ -36,8 +36,7 @@ export default function ContactFooter() {
           </h2>
           <div className="mt-4 w-16 h-1 bg-primary mx-auto" />
           <p className="text-muted-foreground mt-6 max-w-lg mx-auto leading-relaxed font-display text-base">
-            ¿Tenés un torneo próximo? Reservá tu cupo o consultanos por coberturas especiales.
-            Respondemos en menos de 24 horas.
+            ¿Querés tus fotos del ADCC o tenés consultas sobre packs? Escribinos y respondemos en menos de 24 horas.
           </p>
         </div>
 
