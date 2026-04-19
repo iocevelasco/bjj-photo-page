@@ -3,7 +3,7 @@ import { GALLERY_HREF } from "@/components/individual-sales"
 
 export default function Countdown() {
   return (
-    <section className="py-16 px-4 sm:px-6 bg-secondary border-y border-border">
+    <section className="pt-28 pb-16 px-4 sm:px-6 bg-secondary border-b border-border">
       <div className="max-w-6xl mx-auto text-center">
         <div className="flex items-center justify-center gap-2 mb-3">
           <Calendar className="w-4 h-4 text-primary" />
